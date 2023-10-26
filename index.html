@@ -5,36 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <title>Document</title>
 </head>
+
+<!-- body -->
 <body>
+
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-success">
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom border-success border-3">
         <div class="container-xxl">
             <a href="#intro" class="navbar-brand">
-                <span class="fw-bold text-light">
-                    Hello
+                <span class="fw-bold text-success h4">
+                    <i class="bi bi-tree-fill"></i>
+                    Приятели на природата
                 </span>
             </a>
+
             <!-- toggle button for mobile nad -->
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#topics">About</a>
+                    <li class="nav-item rounded m-1 px-1">
+                        <a class="nav-link btn btn-outline-success fw-bold" href="#topics">Събития</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Get in Touch</a>
+                    <li class="nav-item rounded m-1 px-1">
+                        <a class="nav-link btn btn-outline-success fw-bold" href="#contact">Контакти</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container-xl">
-       <img class="mt-5" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBEPEREREhUYGBEREhIZERISEhESEhIRGBkZGhgUGhwcIS4lHB4sHxgYJjgmKy8xNTU1HSQ7QDszPy40NTEBDAwMEA8QHxISHjQnJSY0MTQxNzQxNDE0NDQ0NjE0NDQxNDY0MTQ0NDQ0NDE0MTQ0NDQ0NDQ0MTQ0NDQ0NDQ0NP/AABEIAKIBNwMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAAAwQCBQYBBwj/xAA/EAACAQMCAwUECQEIAQUAAAABAgADERIEEwUhMQZBUWFxIoGRwQcUMkJSkqGx0WIVI1NyguHw8aKTlLLCw//EABkBAQADAQEAAAAAAAAAAAAAAAABAgMEBf/EACgRAAICAgICAQMEAwAAAAAAAAABAhEDEiExQVETBCJhQnGhsRQyUv/aAAwDAQACEQMRAD8A+RWi0zxjGXM7MLRaZ4xjAswtFpnjGMCzC0WmeMYwLMLRaZ4xjAswtFpnjGMCzC0WmeMYwLMLRaZ4xjAswtFpnjGMCzC0WmeMYwLMLRaZ4xjAswtFpnjGMCzC0WmeMYwLMLRaZ4xjAswtFpnjGMCzC0WmeMYwLMLRaZ4xjAswtFpnjGMCzC0WmeMYwLMLRM8YgWS4xjJMYxk0Z2R4xjJMYxihZHjGMkxjGKFkeMYyTGMYoWR4xjJMYxihZHjGMkxjGKFkeMYyTGMYoWR4xjJMYxihZHjGMkxjGKFkeMYyTGMYoWR4xjJMYxihZHjGMkxjGKFkeMYyTGMYoWR4xjJMYxihZHjGMkxjGKFkeMYyTGMYoWR4xjJMYxihZHjGMkxjGKFkeMYyTGMYoWR4zyS4xFCybGMZPhPMZajOyHGMZNjGMULIcYxk2M9wihZBjGMmxjGKFkOMYybGMYoWQ4zqOz/YLX8RojUUdpaTMwVqtRlLYkqxAVWI5gjnbpOewn3D6ItPhwwN/jais/wtT/8AzkS4RpD7nTOEP0S8TH39MfStW+dOV6v0XcVTotJvJaw5/mAnX/S3xzU6V9JT09apTySs1TbYqWF0CXI58rP8Z81bj2vbrrNV/wC61Fv/AJSFbRMnFOjX8S4dV0tZ6FZcKtMgOmSPiSoYc1JB5MD1lbGWHLOxZiWZiSzMSzMx5liTzJ855hLUZWQYxjJsYxihZDjLGh0L6mrToUlyqVXVEXxY+J7gOpPcATMcZ9K+hvgwerX1ri4ojbpeVRhd28iFxHo5kPhFofc6Ol0XYfhmg0yJXopXq1HpU2qOt3erUYL7H4FFyfZ5gKSSTcz432h4cuk1mq06G6UqzqhPM4XuoJ7zYgEz7xxJzX4to6H3NHRq6qr+HccNRog+dmrH3CfCOM6n6xqtTXBuK1eq63/A7kqPykCViaZKSNbjGMmxjGXoxshxjGTYz3CKFkGMYyfCeYxQshxjGT4RhFCyDGMZNjGMULIcYxk+EYRQsgxjGT4RhFCyDGMZNjPcIoWQYz2TYRFCybGMZc2425ejLYp4xjLm3G3FDYp4xjLm3G3FDYp4xjLm3G3FDYp4xjLm3G3FDYp4z9A9gdPtcL0S+NLP/wBRjU/+0+EulgfQz9G8L0+zp6FLupUqaflUD5TPJwjfA7bPjf0sVtziWP8AhaekhHgSXf8AZhOLxn1jjfajhY1Nda3D0q1EqMr1Wo6Zmdk9m92FzbG3PuAnOdouM8O1NDDTaJaNQspNXCkhVAbkLgeZPTn3EyY3VUVm423ZxWMYzreynZCrxNi18NOps9Ui5LdcUHe1u/oL9/SdpxHstwLhyL9ayu3JWepqGdrdTjStyFxzxtzENpOiIxk1t0vyfHsYxm841p9N9ZZdDm1A4hMg2RY9VUEZEXsBcXne8A+jeitIVdexLlbtSV8KdMdfaYcyw7yCAOfXrJbSXJEYyk6R8mxn3n6N9CKHC9N+KqGqsfHcJKn8mI90+cdteG8MobZ0FUMxy3FWpvU1UDkwfnY35Wufdbn9j4NRFLS6emOlOhSUf6UA+UrPpG2Jfc/wcV2k1v1TS8T1ZNq2vrnT6fuZaVJTSBHl7NeoD/WPGfH8J2v0hcW+uasoh/udLenTA6F7+23xAX0UHvmXY3sU/Eb1ajFNMpIyUDOqw6qt+QA7258+Q77SlqrZScnOVROIxjGfVu0fZfgulpVV3dvUohKrvl6ha11vTJNwTbuHqOs+d6LQVNQ60qSl6jmyqvUnv8gB3k8hJVNWUkmnTNbjGM+m0+xGh0FEV+KVuZ6UqZKqT+AWGbn0tb9Zl227JaHTaFdTp6bU3yp3VnqPybqrB2NiPLvkbKyXBpNvwfP+CUKD6rTpqSV07VFFVgbWB8T91b2BPcLmdd9KnCtJpn0aaamlNilXcSmqqWUFMGa3U3zFzzNj4Sn2E7OU+IallrAmhSplnUMy5MTiiXHMD7R5fhkHbXgtHRa1qNC+G3TYKzFihIIxueZFgLX8Yr7qCbULrs5XGMZc2425ejPYp4xjLm3G3FDYp4xjLm3G3FDYp4xjLm3G3FDYp4xjLm3G3FDYp4xLm3EUNi7tRtS9tRtTXU5dijtRtS9tRtRqNijtRtS9tRtRqNijtRtS9tRtRqNijtRtS9tRtRqNiLhul3K9Cmej1qSH0Z1Hzn6AnxTs/TA1mlJ6fWKXxyFv1tPtFZSysoNiVIB62JHWc+btHf8ASO4tn5/1bbtSpU/xKlR/zsW+cganYE+U+gj6OqvTfS3+R/5lLX9kqWnDbutpKwB9kIzufLENf9JqpRfTOeWPIuWv5PpHBuHLpNPRoL0poAT+JurMfMkk++fH+2OsbVa7UOT7KO1NB3KtMleXq2Tf6p9T7N8cp62inMCsoAq0yQGDAc2A71PUH5zneJdhEatVrtqFSk7vUYNTHsZEsRkWAtcnmRMoVGT2OnKnOC06NB9G/C1q6w1HFxp0yUH/ABGOKn3DI+tpsPpM4u7VBolNqagPWAP23PNUPkBZreJHgJd4TxzQaCqKFBSaLcq2qa5dn+6elyo59wHO4Frk+cb7J1dbrWroy/V6+2zVQ4JChVUhR3my3B6c5P6rfC8GfPxax5d80cvx3hCpw3h9ci1V1qK39VMs9SmT5hTa/gR4CfY9MQUQjpgvwsJ8u7a6+nqKlOhRts6VCoK/ZyNgbeIAVQD6zueyfEl1OkpWPt0kVKi35hlFrkeBtcf7Ss09Uy+Gcfkkl6R8YoaY1nRByarUVQfAuwAP6z6/2j1i8L4fjQAVlVKWnHI2Yj7XmQoZufUjn1nLcE4MvDl+u60WamSNPQNsqlQdGt+3h9o9BN1x1RxrR020xBqU6iu1JiFZbqylTf8AzdehANpaVNr0Ux3GMvb6Xk47stwoatOIbnMDTli7c2FfIsj5Hnf2Wv4gnxnUfR7w9dPoamtCl61QVLKgu+FMkCko8WZSfO6+AkGqpLwnh9TTFg2r1d8wDfFGGJ88QtwD3sT520XBO0Op0KslLFkY3wqBiqt3lbEEXsOXSTq5J0Qskcckpd07/BvNDwOvXrniXFmCU6XtJSZhZQDdVI6Kg5curHr336LimlHGNAqo2CVmRgzC7BFe/TxIHTznL8N0mq43Vz1Ln6rSb2lT2ULfgUDv8SbkA9ec6XtkwocOdKXsqdtECcgELC6i3cVBHpKNcpef6NoSWrlXFee2e9k6OipivT0a3Wk6LUrn2mrVACT7X3gL8rcrk2FuvA9o9FV13EtbtLc07s3PkFpIqH33HIeJl7sXxtdC7rVvs1Qt2ALYOt7Gw5kEHnbwEscZ4tpqSalNEWaprXdtRXYFcVYkmmtwDb2iPK5536XUZRkZPLCeNW6rwcHtxtS9tRtTbU49ijtRtS9tRtRqNijtRtS9tRtRqNijtRtS9tRtRqNijtRtS9tRtRqNijtRL21PY1Gxd2o2pe257tzSjn2KG1G1L23PduKGxQ2o2pf2424obFDanu1Lu3G3FDYo7UbUvbc924obFEU7cx1HQjumyXjWtUWFepbzOR+J5yLbjbkOKfZZZJR6dEdfWaircPWqMD1Vqjlfy3tKoo27pe2425OtEPI32UdqZOrNbIk26ZEm3xl3bjbiiNyhtSRS6qUDMEb7SBmCn1HQy1txtxQ3KO1JKDPSbJGZWH3lZla3hcd3lLe3PNuNRuVtQ71WyqMzHxdmY28Lnu8piishyUlWHRlJVh7xLm3G3GpO/kpOhYlmJLHqSSST5k9Zc4RwltXWSkvIHmzWvig6t+wHmRPdudp2P0y6fTVNS3LPIk+FNL/PL9JnkekTbBH5J0+u2S8VqjTpQ4fpfZetZAV60qPPKp/mtkb+RPdNZ2/rALp9MvRfbI8AAUQfq3wmx7P6Ys1XiFfkagJTL7lId/pYADyF++cpxjUnU13q87MbID3IOS/z6kzLHG5ft3+51Z8tY/V9L0kaTajal/bjbnTR525Q2o2pf2424obFDajal7bjbihsUdqNqXtuNuKGxR2o2pe2424obFHajal/bjbihsUNqJe24ihuXtqNmbHajalrRnTNdsxszY7UbUWhTNdtRszY7UbUWhTNdsxtS7WKJiWNgzBQT+I/9ShX1wvZByvzY/ISk8sYrlkN0ZbMbMwTVN15Ee7p7pfoMrjl17x3iRDPGXCIjJMp7MbU2O1G1NLRama7ZjZmx2o2otCma7ajZmx2o2otCma7ajZmx2o2otCma7Zjamx2o2otCma7ajZmx2o2otCma7ZnXcI1un+qrSqsoxDK6PyyFyeneCDNFtRtSmSCmqZthyyxSbSu1XJb49xc1xtU7ikOptYvbpy/DNHszY7UbUmEYxVIrknLI7ka7Zjak+mrq5qDptvYm/UePxB+Elyp/iX8wk7x9mVlPZjZmwFKe7Um0TTNdsxszY7UbUWhTNdtRszY7UbUWhTNdtRszY7UbUWhTNdsxtTY7UbUWhTNdtRL7UwouSAPE2AiNl7BLT11BzYOL+YZf3EtinOPp9RNlo9c9I8ua96Hp7vAzgh9Q/1IhZVf3I323G3M9Jq6dVSVNiBdlawKjx9POWtubqd9HTGKkrRS2546BQSeQAuSegEvbc5HjfES9Z6SN/drYEC1mdbkm/f1t/pkTyaqys0oq2VeM6s1mUIP7tScfEn8RlWofZPpM4nDKbk7Zyvl2Z6R/Y5/dv8ADrHD6zczf2gbg+v/AAzKk1+U8qkU1JUAHl0FuclMz6N7ouII/stYODa/3SfkZsducZpCxZiQbNzvbl15fvNzpOKPSFm9pAOhPMDyPynRDM1xI2hlXUjdbcbch4PxFNRTUsVFS5DJe3MHla/XlabPbmynZ1RipK0UtuNuTaqvToi7sF8B1Y+gHMzlX43U36rU/suFChxfEJ3gXtfm3xkSypFJ6x7N9q3WjTZ3+ytr268zYD9ZGdZR6ZqfS7ftOU1GqqV75uW9q4ueQHkOgkmn5WB62tMpZ2ujF5fSOspVEfkrAnwvz+El25zEvaTibpYN7aeBPtD0P8yY/Uf9COWL/wBkbnbjbjTa+jUHJwD4PZT/AAfdLZx63FvG4tNVkT6OmMVLlFTbjbnmo4jQp9XBPgntn9OnvmjqdoHcutMBRkcWIuwTu5dL3B8esiWaKKycY9s3Nd0pjJ2Cjz6n0HfNPqeMX5U1t/U3X3D+Zq3qlzkzFie8kkyAP7ZHlac8s8pWlwc8p30EpkEkm9/38ZeToPSUq7WX1k1CryExdvlmTRf02qameXNe9T0P8Gb2gy1FDLzB+IPgZzKuDJBq3oq7IbEqR7zyB9Re81xZXHjwXhOnT6Om24255wWvv0Kbk3a1n8c15En1tf3y9tzrU7OyMNlaKW3G3LpSUeI6taemauhBuoKHqCWsFP63jYOCStnu3G3LGlcVaaOOjqrDyuOkl242JWOyltyHVVUork59B3sfASxxHVJp0ybmx+wg6sfkPOcfqNU1ds2Nyeg7lHgB4TLJmpcdmWRqPHkk1mraq1zyUfZXuH8nziUM/b/SJyy2bs5ti5RHMyaQ0D1k0qikuyvrWsh8yB7u+bvh/H6gRdxQ/Ic74ty5c+4/CauJZSaXBaM5R5To22v7QMyFUXAsLZFsmA77chY+c5zbAOUldrm8xkSlJvll5TlPmTIqD3v6/vJZFmi9P0mD1z3cv1jVyfBSy5SNjMq9MOLE2537prC5PeZ5LKDXkq+TapioC36eJEPZgRfqO4iaqJOv5Io2dCiEBAN7mWRq6iD2XceADtb4TRz3M+J+JjV+yU2naL7uzksxJY9SSST7zMMR1tzlQVW8ZmK58pTSRayZEC9Jg72dfL5wNQO8fOZrUU9/x5RUk7aBcVrj955Uayk+AMgU+EzGoC/aIHmSBKpkOPow0DXUjwP7ySuvITw6ukPvp+dP5nh1FNhYOh9HX+ZZ8infRhIlp43I5mxkikHpz9Oc8ZwOplU34LGFK6qbjpMlsfasOffIqla4sPjIbnp3TTVvnoiyy9RO/n+sx3wOg+UgiWUERZP9Y8v1k51VNxZgbfp+koxGqIZu+HazZYGkw81vcMPAidNR45QZbvdG71xZvgQP4nz6SJXdejH0PMfrJW0ema480ocL+TseKcdQ0qiU1YsyMoY2W1xa4HM9859K71NMunbkiPdeXtHqQDfu9o/CVV1p+8PhykyatD3keo/iRKUhPNKTts3nBuKDTotJxdFviw+0LknmO8c/+5udTxegiFwwY/dRT7ZPhY8wPMzjd5LciD7xIma/OR8skqNMf1E4x1JNbqnrOzubseg7lHco8BKCEowB/wCXlqYMF6m3vlE/Zi7btmcSNqyjz9J5Ip+hZpKfGay87qfVf4tLVPtA33kU/wCViv73mkia6o7Hji+0dGnaCmftKw9MW+YkrcZosLAm58VInLxI1RR4IHSjWq32SvxBM8ZyepnNzNKjL0Yj0JElJIq8HpnQRNIusqDv+IBko4k46hT7iPnJso8EjbRNYOJnvUfEj5TL+0/6f/L/AGkkfDL0bGJq24k3co99zI219Q94HoB85FhYJG4mLOq9SB6kCaJq7t1Y/E2kcWaL6f2zdvraY+9f0BMhfiS9yk+thNVEWWWGKLz8SY9FA9bmRNrah+9b0AErRJNFCK8GbVXPVmPqxkdp7EgkREQWA5SRa7jozfmMjiCGk+y0uuqD71/UCSrxJu9QfS4lCJJV44vwbReJr3gj0IP8SVdfTPeR6g/KaaJFlHhizfLqEPRl+IEkBv0/Sc7PRFlX9OvDOiiaBazjozfmMkGsqD7x99j+8WUeB+GbuJpxr6niD6qPlPRxJ/6fgf5iyv8AjyNvE1P9pv4L8G/me/2k34V/8v5k2PgkbWJqf7TfwX4N/M8PEn/p+B/mRY+CRt4mmOvqeI/KJ7Fk/BP8FSIiDsEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREA/9k=" alt=""> 
-    </div>
+
+
+    <!-- top page / #intro -->
+
+    <section id="intro">
+        <div class="container-lg my-5 py-1">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-lg-6 text-center">
+                    <img src="/assets/image_holder.png" class="img-fluid img-thumbnail border-success border-3 " alt="image_holder">
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="h3 text-center fw-bold">Lorem ipsum dolor sit.</div>
+                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore officia quos saepe accusamus illo, fugit placeat expedita! Illo, aperiam neque? Dolorem sunt veritatis iusto fuga aliquam illo, porro, numquam unde corporis magnam ex doloremque? Dolorem eius ab perferendis deserunt pariatur laboriosam, recusandae corrupti? Consequatur sint distinctio optio eius quo omnis accusantium mollitia porro unde molestiae tempora est voluptatibus magni repudiandae voluptas quidem, saepe necessitatibus cupiditate, culpa dignissimos aut corrupti! Vitae porro consequuntur rerum dolor, nobis rem excepturi minima mollitia sunt asperiores assumenda corporis ut quis odit, autem nam sit, pariatur nihil nisi ex animi? Ea incidunt optio alias perferendis architecto veniam accusamus voluptatibus. Vitae iure nesciunt rem cumque, veritatis recusandae dolores, ut harum numquam sit magnam ab reprehenderit placeat perspiciatis.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-lg my-5 py-1">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-lg-6">
+                    <div class="h3 text-center fw-bold">Lorem ipsum dolor sit.</div>
+                    <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, nobis itaque. Nesciunt omnis doloribus recusandae saepe nemo, dolores impedit laborum illum, iste ab quo voluptatibus soluta modi sed corporis architecto hic doloremque repellat distinctio nisi! Illo vel cum dolore, natus tenetur dolores sint porro illum deserunt omnis aliquam dolorum doloremque explicabo debitis blanditiis, ipsam aspernatur neque eos unde. Similique ea quas expedita tempora! Sint reprehenderit obcaecati reiciendis unde possimus, nisi harum doloremque odio sit dicta rerum, ipsam quisquam consequatur alias. Inventore optio ipsam beatae magnam, quia in eius suscipit, magni doloremque deserunt pariatur. Tenetur cumque voluptatem, molestiae animi suscipit neque culpa cupiditate. Deleniti, iste. Illo, ex cum autem ad labore eaque nulla sed suscipit nesciunt blanditiis, molestias non quasi dolorem.</p>
+                </div>
+                <div class="col-sm-12 col-lg-6 text-center">
+                    <img src="/assets/image_holder.png" class="img-fluid img-thumbnail border-success border-3 " alt="image_holder">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- middle page / #topics -->
+
+    <section id="topics">
+
+    </section>
+
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
