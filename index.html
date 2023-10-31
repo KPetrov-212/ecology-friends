@@ -7,18 +7,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <title>Document</title>
+    <title>Приятели на природата</title>
 </head>
 
 <!-- body -->
-<body>
+<body id="intro">
 
     <!-- navbar -->
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom border-success border-3">
+    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light border-bottom border-success border-3">
         <div class="container-xxl">
             <a href="#intro" class="navbar-brand">
-                <span class="fw-bold text-success h4">
+                <span class="fw-bold text-success h5">
                     <i class="bi bi-tree-fill"></i>
                     Приятели на природата
                 </span>
@@ -26,13 +26,13 @@
 
             <!-- toggle button for mobile nad -->
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler border border-2 border-success" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav">
                     <li class="nav-item rounded m-1 px-1">
-                        <a class="nav-link btn btn-outline-success fw-bold" href="#topics">Събития</a>
+                        <a class="nav-link btn btn-outline-success fw-bold" href="#events">Събития</a>
                     </li>
                     <li class="nav-item rounded m-1 px-1">
                         <a class="nav-link btn btn-outline-success fw-bold" href="#contact">Контакти</a>
@@ -45,11 +45,11 @@
 
     <!-- top page / #intro -->
 
-    <section id="intro">
+    <section class="bg-light">
         <div class="container-lg my-5 py-1">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center align-items-center">
                 <div class="col-sm-12 col-lg-6 text-center">
-                    <img src="/assets/image_holder.png" class="img-fluid img-thumbnail border-success border-3 " alt="image_holder">
+                    <img src="/assets/image_holder.png" class="img-fluid img-thumbnail shadow p-1 mb-5 bg-body rounded" alt="image_holder">
                 </div>
                 <div class="col-sm-12 col-lg-6">
                     <div class="h3 text-center fw-bold">Lorem ipsum dolor sit.</div>
@@ -58,22 +58,52 @@
             </div>
         </div>
         <div class="container-lg my-5 py-1">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center align-items-center">
                 <div class="col-sm-12 col-lg-6">
                     <div class="h3 text-center fw-bold">Lorem ipsum dolor sit.</div>
                     <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, nobis itaque. Nesciunt omnis doloribus recusandae saepe nemo, dolores impedit laborum illum, iste ab quo voluptatibus soluta modi sed corporis architecto hic doloremque repellat distinctio nisi! Illo vel cum dolore, natus tenetur dolores sint porro illum deserunt omnis aliquam dolorum doloremque explicabo debitis blanditiis, ipsam aspernatur neque eos unde. Similique ea quas expedita tempora! Sint reprehenderit obcaecati reiciendis unde possimus, nisi harum doloremque odio sit dicta rerum, ipsam quisquam consequatur alias. Inventore optio ipsam beatae magnam, quia in eius suscipit, magni doloremque deserunt pariatur. Tenetur cumque voluptatem, molestiae animi suscipit neque culpa cupiditate. Deleniti, iste. Illo, ex cum autem ad labore eaque nulla sed suscipit nesciunt blanditiis, molestias non quasi dolorem.</p>
                 </div>
                 <div class="col-sm-12 col-lg-6 text-center">
-                    <img src="/assets/image_holder.png" class="img-fluid img-thumbnail border-success border-3 " alt="image_holder">
+                    <img src="/assets/image_holder.png" class="img-fluid img-thumbnail shadow p-1 mb-5 bg-body rounded-3 " alt="image_holder">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- middle page / #topics -->
+    <!-- middle page / #events -->
 
-    <section id="topics">
-
+    <section id="events" class="bg-success bg-gradient my-5 py-1">
+        <div class="container-lg my-5 py-1">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <div class="card shadow p-1 mb-5 bg-body rounded">
+                        <img src="/assets/image_holder.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit.</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel praesentium, alias vitae quibusdam omnis voluptatum deleniti. Aliquid, iure quae. Ea a odio dolore, voluptatem deleniti suscipit esse cum modi obcaecati!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="card shadow p-1 mb-5 bg-body rounded">
+                        <img src="/assets/image_holder.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit.</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel praesentium, alias vitae quibusdam omnis voluptatum deleniti. Aliquid, iure quae. Ea a odio dolore, voluptatem deleniti suscipit esse cum modi obcaecati!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="card shadow p-1 mb-5 bg-body rounded">
+                        <img src="/assets/image_holder.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit.</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel praesentium, alias vitae quibusdam omnis voluptatum deleniti. Aliquid, iure quae. Ea a odio dolore, voluptatem deleniti suscipit esse cum modi obcaecati!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Bootstrap Bundle with Popper -->
