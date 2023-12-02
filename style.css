@@ -1,0 +1,12 @@
+.bg_background {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #d1e7dd, rgba(255, 255, 255, 0)), #ffffff;
+}
+
+.bg_background_nav {
+    /* background: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #d1e7dd); */
+    background-color: #d1e7dd;
+}
+
+.nav-item .nav-link {
+    border-width: 2px;
+}
