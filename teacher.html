@@ -11,20 +11,84 @@
     <title>Приятели на природата</title>
 </head>
 
-<!-- body -->
-<body id="intro">
 
-    <div class="container-lg my-5 py-1">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-sm-12 col-lg-6 text-center order-lg-1">
-                <img src="/assets/teacher.jpg" class="img-fluid img-thumbnail shadow p-1 mb-5 bg-body rounded" alt="image_holder">
+<!-- information/main body -->
+
+<body id="information">
+
+    <!-- navbar -->
+
+    <nav class="navbar sticky-top navbar-expand-md navbar-light bg_background_nav border-bottom border-success border-3">
+        <div class="container-xxl">
+            <a href="/index.html" class="navbar-brand">
+                <span class="fw-bold text-success h5">
+                    <i class="bi bi-tree-fill"> Приятели на природата</i>
+                </span>
+            </a>
+
+            <!-- toggle button for mobile nad -->
+
+            <button class="navbar-toggler border border-2 border-success" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item rounded m-1 px-1">
+                        <a class="nav-link btn btn-outline-success fw-bold" href="/index.html#events">Събития</a>
+                    </li>
+                    <li class="nav-item rounded m-1 px-1">
+                        <a class="nav-link btn btn-outline-success fw-bold" href="/index.html#contact">Контакти</a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-sm-12 col-lg-6 order-lg-2">
-                <div class="h3 text-center fw-bold">Христо Петков</div>
-                <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore officia quos saepe accusamus illo, fugit placeat expedita! Illo, aperiam neque? Dolorem sunt veritatis iusto fuga aliquam illo, porro, numquam unde corporis magnam ex doloremque? Dolorem eius ab perferendis deserunt pariatur laboriosam, recusandae corrupti? Consequatur sint distinctio optio eius quo omnis accusantium mollitia porro unde molestiae tempora est voluptatibus magni repudiandae voluptas quidem, saepe necessitatibus cupiditate, culpa dignissimos aut corrupti! Vitae porro consequuntur rerum dolor, nobis rem excepturi minima mollitia sunt asperiores assumenda corporis ut quis odit, autem nam sit, pariatur nihil nisi ex animi? Ea incidunt optio alias perferendis architecto veniam accusamus voluptatibus. Vitae iure nesciunt rem cumque, veritatis recusandae dolores, ut harum numquam sit magnam ab reprehenderit placeat perspiciatis.</p>
+        </div>
+    </nav>
+
+
+    <div class="bg_background">
+        <div class="container-lg my-5 py-1">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-sm-12 col-lg-6 text-center order-lg-1">
+                    <img src="/assets/teacher.jpg" class="img-fluid img-thumbnail shadow p-1 mb-5 bg-body rounded" alt="image_holder">
+                </div>
+                <div class="col-sm-12 col-lg-6 order-lg-2">
+                    <div class="h3 text-center fw-bold">Христо Петков</div>
+                    <p class="text-center fs-5">Старши учител-Биология, Химия и Физика. Микробиолог по безопасност и контрол на храни. II -Професионален клас в системата на училищното образование. Изявен интерес към опазване на околната среда,както й внедряване на съвременните технологии за защита на животински и растителни видове. Чрез клубовете по интереси, целя повече ученици да са активни защитници на екологичните проблеми на 21 век.</p>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- footer -->
+
+    <section id="contact">
+        <footer class="mt-4">
+            <div class="bg_background_fot">
+                <div class="container-sm">
+                    <!-- <div class="d-flex justify-content-center mt-4 p-1">
+                        <h1 class="text-center">Контакти</h1>
+                    </div> -->
+                </div> 
+                <ul class="container-lg p-5 mb-0 list-unstyled d-flex flex-column flex-md-row justify-content-center">
+                    <li class="me-md-3 mb-2">
+                        <a href="https://www.instagram.com/krisi.petroff/" class="text-light text-decoration-none fs-4">
+                            <i class="bi bi-instagram"></i> Instagram
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://www.facebook.com/profile.php?id=100009610440693" class="text-light text-decoration-none fs-4">
+                            <i class="bi bi-facebook"></i> Facebook
+                        </a>
+                    </li>
+                    <li class="ms-md-3">
+                        <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" class="text-light text-decoration-none fs-4">
+                            <i class="bi bi-youtube"></i> YouTube
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </section> 
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

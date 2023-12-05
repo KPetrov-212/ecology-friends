@@ -7,6 +7,10 @@
     background-color: #d1e7dd;
 }
 
+.bg_background_fot {
+    background-color: rgb(48, 43, 34);
+}
+
 .nav-item .nav-link {
     border-width: 2px;
 }
