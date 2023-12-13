@@ -8,6 +8,7 @@
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    
     <title>Приятели на природата</title>
 </head>
 
@@ -15,28 +16,25 @@
 <body id="intro">
 
     <!-- navbar -->
-
     <nav class="navbar sticky-top navbar-expand-md navbar-light bg_background_nav border-bottom border-success border-3">
         <div class="container-xxl">
             <a href="#intro" class="navbar-brand">
                 <span class="fw-bold text-success h5">
                     <i class="bi bi-tree-fill"> Приятели на природата</i>
-                    
                 </span>
             </a>
-
-            <!-- toggle button for mobile nad -->
-
+    
+            <!-- toggle button for mobile nav -->
             <button class="navbar-toggler border border-2 border-success" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="bi bi-list"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav">
                     <li class="nav-item rounded m-1 px-1">
-                        <a class="nav-link btn btn-outline-success fw-bold" href="#events">Събития</a>
+                        <a class="nav-link btn btn-outline-success fw-bold" href="#events" onclick="scrollToTarget('#events')">Събития</a>
                     </li>
                     <li class="nav-item rounded m-1 px-1">
-                        <a class="nav-link btn btn-outline-success fw-bold" href="#contact">Контакти</a>
+                        <a class="nav-link btn btn-outline-success fw-bold" href="#contact" onclick="scrollToTarget('#contact')">Контакти</a>
                     </li>
                 </ul>
             </div>
@@ -44,57 +42,47 @@
     </nav>
 
     <!-- image slider -->
-    <div id="carouselExampleCaptions" class="carousel slide container-lg my-5 py-1">
+    <div id="carouselCaptions" class="carousel slide container-lg my-5 py-1">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="/teacher.html" class="text-light text-decoration-none fs-4">
-                <img src="/assets/teacher.png" class="d-block w-100 h-50" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h1>Христо Петков</h1>
-                  
-                    <i class=""></i> Старши учител - Биология,Химия и Физика 
+        <div class="carousel-inner bg-body rounded shadow">
+            <div class="carousel-item active">
+                <a href="/Ecology.pdf" class="text-light text-decoration-none fs-4">
+                    <img src="/assets/Prezentacion.png" class="d-block w-100 h-50" alt="...">
+                    <div class="carousel-caption d-none d-md-block">  
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="/teacher.html" class="text-light text-decoration-none fs-4">
+                    <img src="/assets/teacher.png" class="d-block w-100 h-50" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h1>Христо Петков</h1>
+                        <i class="">Старши учител - Биология,Химия и Физика</i>  
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="/teacher.html" class="text-light text-decoration-none fs-4">
+                    <img src="/assets/us.png" class="d-block w-100 h-50" alt="...">
                 </a>
             </div>
-          </div>
-          <div class="carousel-item">
-            <a href="/teacher.html" class="text-light text-decoration-none fs-4">
-                <img src="/assets/teacher.png" class="d-block w-100 h-50" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h1>Христо Петков</h1>
-                  
-                    <i class=""></i> Старши учител - Биология,Химия и Физика 
-                </a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <a href="/teacher.html" class="text-light text-decoration-none fs-4">
-                <img src="/assets/teacher.png" class="d-block w-100 h-50" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h1>Христо Петков</h1>
-                  
-                    <i class=""></i> Старши учител - Биология,Химия и Физика 
-                </a>
-            </div>
-          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </button>
     </div>
 
 
     <!-- top page / #intro -->
-
     <section class="bg_background">
         <div class="container-sm">
             <div class="d-flex justify-content-center mt-4 p-1 border-bottom border-2 border-success">
@@ -123,11 +111,9 @@
                 </div>
             </div>
         </div>
-        
     </section>
 
     <!-- middle page / #events -->
-
     <section id="events" class="bg-gradient my-5 py-1">
         <div class="container-sm">
             <div class="d-flex justify-content-center mt-4 p-1 border-bottom border-2 border-success">
@@ -200,5 +186,6 @@
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
