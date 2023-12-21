@@ -1,10 +1,18 @@
 .bg_background {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #d1e7dd, rgba(255, 255, 255, 0)), #ffffff;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #b6d7a8, rgba(255, 255, 255, 0)), #ffffff;
 }
 
-.bg_background_nav {
+.bg_custom_green {
     /* background: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #d1e7dd); */
-    background-color: #d1e7dd;
+    background-color: #b6d7a8;
+}
+
+.bg_custom_orange{
+    background-color: #f9cb9c;
+}
+
+.text-orange{
+    color: #e8943c
 }
 
 .bg_background_fot {
