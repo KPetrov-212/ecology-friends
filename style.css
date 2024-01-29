@@ -29,7 +29,13 @@
 
 .youtube:hover { color: rgb(255, 0, 0) !important; }
 
+.filter:hover{
+    filter: brightness(90%);
+}
+
 .container-lg ul {
     margin: 0 !important;
     padding: 0 !important;
-  }
+}
+
+  

@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приятели на природата</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-    
-    <title>Приятели на природата</title>
 </head>
 
 <!-- body -->
@@ -44,32 +43,37 @@
     
 
     <!-- image slider -->
-    <div id="carouselCaptions" class="carousel slide container-lg my-5 py-1">
+    <div id="carouselCaptions" class="carousel slide container-lg my-5 py-1" data-bs-theme="dark">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner bg-body rounded shadow">
+        <div class="carousel-inner bg-body rounded shadow filter">
             <div class="carousel-item active">
                 <a href="/Ecology.pdf" class="text-light text-decoration-none fs-4">
-                    <img src="/assets/Prezentacion.png" class="d-block w-100 h-50" alt="...">
+                    <img src="/assets/Prezentacion.jpg" class="d-block w-100 h-50" alt="...">
                     <div class="carousel-caption d-none d-md-block">  
-                    </a>
-                </div>
+                        <i class="text-dark bg-white opacity-100">Вижте нашата Презентация</i>  
+                    </div>
+                </a>
             </div>
             <div class="carousel-item">
                 <a href="/teacher.html" class="text-light text-decoration-none fs-4">
                     <img src="/assets/teacher-bg.jpg" class="d-block w-100 h-50" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                    <h1>Христо Петков</h1>
-                        <i class="">Старши учител - Биология,Химия и Физика</i>  
-                    </a>
-                </div>
+                        <h1 class="text-white">Христо Петков</h1>
+                        <i class="text-white">Преподавател - Старши учител</i>  
+                    </div>
+                </a>
             </div>
             <div class="carousel-item">
-                <a href="/teacher.html" class="text-light text-decoration-none fs-4">
+                <a href="/us.html" class="text-light text-decoration-none fs-4">
                     <img src="/assets/us.jpg" class="d-block w-100 h-50" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="text-white">Христо Петков</h1>
+                        <i class="text-white">Преподавател - Старши учител</i>  
+                    </div>
                 </a>
             </div>
         </div>
@@ -184,7 +188,7 @@
     <section id="contact">
         <svg id="wave1" style="transform:translate(0, 20px) rotate(0deg); transition: 0.3s" viewBox="0 0 1440 120" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="second-gradient" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(48, 43, 34, 1)" offset="0%"></stop><stop stop-color="rgba(48, 43, 34, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#second-gradient)" d="M0,36L30,42C60,48,120,60,180,58C240,56,300,40,360,32C420,24,480,24,540,28C600,32,660,40,720,38C780,36,840,24,900,18C960,12,1020,12,1080,16C1140,20,1200,28,1260,34C1320,40,1380,44,1440,38C1500,32,1560,16,1620,10C1680,4,1740,8,1800,18C1860,28,1920,44,1980,54C2040,64,2100,68,2160,58C2220,48,2280,24,2340,20C2400,16,2460,32,2520,42C2580,52,2640,56,2700,48C2760,40,2820,20,2880,14C2940,8,3000,16,3060,24C3120,32,3180,40,3240,40C3300,40,3360,32,3420,24C3480,16,3540,8,3600,4C3660,0,3720,0,3780,10C3840,20,3900,40,3960,40C4020,40,4080,20,4140,12C4200,4,4260,8,4290,10L4320,12L4320,120L4290,120C4260,120,4200,120,4140,120C4080,120,4020,120,3960,120C3900,120,3840,120,3780,120C3720,120,3660,120,3600,120C3540,120,3480,120,3420,120C3360,120,3300,120,3240,120C3180,120,3120,120,3060,120C3000,120,2940,120,2880,120C2820,120,2760,120,2700,120C2640,120,2580,120,2520,120C2460,120,2400,120,2340,120C2280,120,2220,120,2160,120C2100,120,2040,120,1980,120C1920,120,1860,120,1800,120C1740,120,1680,120,1620,120C1560,120,1500,120,1440,120C1380,120,1320,120,1260,120C1200,120,1140,120,1080,120C1020,120,960,120,900,120C840,120,780,120,720,120C660,120,600,120,540,120C480,120,420,120,360,120C300,120,240,120,180,120C120,120,60,120,30,120L0,120Z"></path></svg>
         <footer class="mt-0">
-            <div class="bg_background_fot pt-1">
+            <div class="bg_background_fot pt-1 pb-4">
                 <div class="container-sm">
                     <div class="d-flex text-white justify-content-center mt-4">
                         <h1 class="text-center">Контакти</h1>
@@ -192,17 +196,17 @@
                 </div> 
                 <ul class="container-lg p-5 mb-0 list-unstyled d-flex flex-column flex-md-row justify-content-center">
                     <li class="me-md-3 mb-2">
-                        <a href="https://www.instagram.com/krisi.petroff/" class="text-light text-decoration-none fs-4">
+                        <a href="https://www.instagram.com/studentcouncil_ppmg" target="_blank" class="text-light text-decoration-none fs-4">
                             <i class="bi bi-instagram instagram"> Instagram</i>
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="https://www.facebook.com/profile.php?id=100009610440693"target="_blank"class="text-light text-decoration-none fs-4">
+                        <a href="https://www.facebook.com/ppmg.botevgrad" target="_blank" class="text-light text-decoration-none fs-4">
                             <i class="bi bi-facebook facebook"> Facebook</i> 
                         </a>
                     </li>
                     <li class="ms-md-3">
-                        <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" class="text-light text-decoration-none fs-4">
+                        <a href="https://www.youtube.com/@user-eo5lw6cz2k" target="_blank" class="text-light text-decoration-none fs-4">
                             <i class="bi bi-youtube youtube"> YouTube</i> 
                         </a>
                     </li>
@@ -212,7 +216,7 @@
     </section>        
 
     <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
