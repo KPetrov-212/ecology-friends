@@ -4,11 +4,11 @@
 
 .bg_custom_green {
     /* background: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #d1e7dd); */
-    background-color: #b6d7a8;
+    background-color: rgb(182, 215, 168);
 }
 
 .bg_custom_orange{
-    background-color: #f9cb9c;
+    background-color: rgb(249, 203, 156);
 }
 
 .text-orange{
@@ -22,3 +22,14 @@
 .nav-item .nav-link {
     border-width: 2px;
 }
+
+.instagram:hover { color: rgb(	208, 0, 208) !important; }
+
+.facebook:hover { color: rgb(0, 0, 255) !important; }
+
+.youtube:hover { color: rgb(255, 0, 0) !important; }
+
+.container-lg ul {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
