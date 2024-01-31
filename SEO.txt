@@ -1,2 +1,2 @@
 robots.txt
-tld: .online ? or .com
+tld: .online or .com  ?
