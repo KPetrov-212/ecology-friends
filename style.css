@@ -3,16 +3,7 @@
 }
 
 .bg_custom_green {
-    /* background: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #d1e7dd); */
     background-color: rgb(182, 215, 168);
-}
-
-.bg_custom_orange{
-    background-color: rgb(249, 203, 156);
-}
-
-.text-orange{
-    color: #e8943c
 }
 
 .bg_background_fot {
@@ -23,7 +14,7 @@
     border-width: 2px;
 }
 
-.instagram:hover { color: rgb(	208, 0, 208) !important; }
+.instagram:hover { color: rgb(255, 1, 217) !important; }
 
 .facebook:hover { color: rgb(0, 0, 255) !important; }
 
@@ -36,11 +27,4 @@
 .container-lg ul {
     margin: 0 !important;
     padding: 0 !important;
-}
-
-.bubble {
-    
-    background-image: url('data:image/svg+xml,<%3Fxml version="1.0" standalone="no"%3F><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path fill="%23FF0066" d="M60.6,-57.3C77.2,-44,88.3,-22,87,-1.2C85.8,19.5,72.2,39,55.6,52.9C39,66.7,19.5,74.8,-1.2,76.1C-21.9,77.3,-43.9,71.6,-58.4,57.7C-72.9,43.9,-79.9,21.9,-79.2,0.7C-78.5,-20.5,-70,-41,-55.5,-54.2C-41,-67.5,-20.5,-73.5,0.8,-74.3C22,-75.1,44,-70.5,60.6,-57.3Z" transform="translate(100 100)" /></svg>');
-    background-size: cover;
-    background-position: 10px;
 }

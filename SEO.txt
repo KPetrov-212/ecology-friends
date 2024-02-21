@@ -1,2 +1,0 @@
-robots.txt
-tld: .online or .com  ?

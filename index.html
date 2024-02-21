@@ -9,6 +9,9 @@
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Connect with Friends of Nature through Instagram, Facebook, and YouTube. Stay updated on our environmental initiatives and engage with us on social media.">
+    <meta name="description" content="Explore our eco-friendly events and lectures. Join us in weekly gatherings at the International Business School in Botevgrad. Dive into water pollution research and discover the principles of organic farming.">
+    <meta name="description" content="Discover the world of ecology with Friends of Nature. Learn about the science that explores connections between living beings and the environment. Join us in caring for and improving the world around us.">
     <meta name="google-site-verification" content="-YfkShBD10mzQ9bvHNYym1Wiq5UC4nR7jPIwwk7EORU" />
 </head>
 
@@ -31,10 +34,13 @@
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav">
                     <li class="nav-item rounded m-1 px-1">
-                        <a class="nav-link btn fw-bold" href="#events" onclick="scrollToTarget('#events')">Събития</a>
+                        <a class="nav-link btn fw-bold" href="#about">За нас</a>
                     </li>
                     <li class="nav-item rounded m-1 px-1">
-                        <a class="nav-link btn fw-bold" href="#contact" onclick="scrollToTarget('#contact')">Контакти</a>
+                        <a class="nav-link btn fw-bold" href="#events">Събития</a>
+                    </li>
+                    <li class="nav-item rounded m-1 px-1">
+                        <a class="nav-link btn fw-bold" href="#contact">Контакти</a>
                     </li>
                 </ul>
             </div>
@@ -52,8 +58,8 @@
         </div>
         <div class="carousel-inner bg-body rounded shadow filter">
             <div class="carousel-item active">
-                <a href="Ecology.pdf" class="text-light text-decoration-none fs-4">
-                    <img src="assets/Prezentacion.jpg" class="d-block w-100 h-50" alt="...">
+                <a href="Ecology.pdf" class="text-light text-decoration-none fs-4" target="_blank">
+                    <img src="assets/Prezentacion.jpg" class="d-block w-100 h-50" alt="link_to_ecology_prezentation">
                     <div class="carousel-caption d-none d-md-block">  
                         <i class="text-dark fw-bold rounded-pill px-1" style="--bs-bg-opacity: .1;">Вижте нашата Презентация</i>  
                     </div>
@@ -61,7 +67,7 @@
             </div>
             <div class="carousel-item">
                 <a href="teacher.html" class="text-light text-decoration-none fs-4">
-                    <img src="assets/teacher-bg.jpg" class="d-block w-100 h-50" alt="...">
+                    <img src="assets/teacher-bg.jpg" class="d-block w-100 h-50" alt="image_of_the_ecology_friends_teacher">
                     <div class="carousel-caption d-none d-md-block">
                         <h1 class="text-white">Христо Петков</h1>
                         <i class="text-white bg-dark fw-bold rounded-pill px-1" style="--bs-bg-opacity: .3;">Преподавател - Старши учител</i>  
@@ -70,7 +76,7 @@
             </div>
             <div class="carousel-item">
                 <a href="us.html" class="text-light text-decoration-none fs-4">
-                    <img src="assets/us.jpg" class="d-block w-100 h-50" alt="...">
+                    <img src="assets/us.jpg" class="d-block w-100 h-50" alt="image_of_the_ecology_friends_group">
                     <div class="carousel-caption d-none d-md-block">
                         <h1 class="text-white"></h1>
                         <i class="text-white bg-dark fw-bold rounded-pill px-1" style="--bs-bg-opacity: .3;">Защо решихме да станем част от клуба ,,Приятели на природата‘‘?</i>  
@@ -90,7 +96,7 @@
 
 
     <!-- top page / #intro -->
-    <section class="bg_background">
+    <section id="about" class="bg_background">
         <div class="container-sm">
             <div class="d-flex justify-content-center mt-4 p-1 border-bottom border-2 border-success">
                 <h1 class="text-center">Приятели на природата</h1>
@@ -99,7 +105,7 @@
         <div class="container-lg my-5 py-1">
             <div class="row justify-content-center align-items-center">
                 <div class="col-sm-12 col-lg-6 text-center order-lg-2">
-                    <img src="assets/2183.jpg" class="img-fluid img-thumbnail shadow p-1 mb-5 bg-body rounded-3 " alt="image_holder">
+                    <img src="assets/ecology_image.jpg" class="img-fluid img-thumbnail shadow p-1 mb-5 bg-body rounded-3 " alt="what_is_ecology">
                 </div>
                 <div class="col-sm-12 col-lg-6 order-lg-1">
                     <div class="h3 text-center fw-bold">Какво е екология?</div>
@@ -110,7 +116,7 @@
         <div class="container-lg my-5 py-1">
             <div class="row justify-content-center align-items-center">
                 <div class="col-sm-12 col-lg-6 text-center order-lg-1">
-                    <img src="assets/us.jpg" class="img-fluid img-thumbnail shadow p-1 mb-5 bg-body rounded" alt="image_holder">
+                    <img src="assets/us.jpg" class="img-fluid img-thumbnail shadow p-1 mb-5 bg-body rounded" alt="image_of_the_ecology_friends_group">
                 </div>
                 <div class="col-sm-12 col-lg-6 order-lg-2">
                     <div class="h3 text-center fw-bold">Кои сме ние?</div>
@@ -129,9 +135,10 @@
         </div>
         <div class="container-lg my-5 py-1 text-center">
             <div class="row justify-content-center">
+                <!-- first-card -->
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="card shadow p-1 mb-5 bg-body rounded">
-                        <img src="assets/pres/lekciq.jpg" alt="" class="card-img-top">
+                        <img src="assets/lekciq.jpg" alt="ecology_lection" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">СЪБИРАНИЯ И ЛЕКЦИИ</h5>
                             <button class="btn mb-2" type="button" data-bs-toggle="collapse"
@@ -146,11 +153,24 @@
                         </div>
                     </div>
                 </div>
+                <!-- second-card -->
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="card shadow p-1 mb-5 bg-body rounded">
-                        <img src="assets/water/water_resurch_yellow.jpg" alt="" class="card-img-top">
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="assets/water_resurch_white.jpg" class="d-block w-100" alt="water_resurch_white">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/water_resurch_yellow.jpg" class="d-block w-100" alt="water_resurch_yellow">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/water_resurch_red.jpg" class="d-block w-100" alt="water_resurch_red">
+                              </div>
+                            </div>
+                          </div>
                         <div class="card-body">
-                            <h5 class="card-title">ЗАМЪРСЯВАНЕ НА ВОДАТА</h5>
+                            <h5 class="card-title">ИЗСЛЕДВАНЕ НА ВОДАТА</h5>
                             <button class="btn mb-2" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
                                 виж повече
@@ -163,9 +183,10 @@
                         </div>
                     </div>
                 </div>
+                <!-- third-card -->
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="card shadow p-1 mb-5 bg-body rounded">
-                        <img src="assets/pres/frutita_front.jpg" alt="" class="card-img-top">
+                        <img src="assets/frutita_front.jpg" alt="organic_farming_lection" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">БИОЗЕМЕДЕЛИЕ</h5>
                             <button class="btn mb-2" type="button" data-bs-toggle="collapse"
